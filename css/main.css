@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body {
+  padding: 2em;
+  text-align: right;
+  font-family: 'Droid Arabic Kufi', serif;
+  direction: rtl;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

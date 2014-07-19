@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Arabic Markdown</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="preview"> </div>
+        </div>
+        <div class="col-sm-6">
+          <textarea id="text-input" oninput="this.editor.update()"></textarea>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->       
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="js/vendor/markdown.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
