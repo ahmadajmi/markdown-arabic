@@ -8,4 +8,5 @@
   }
   var $ = function (id) { return document.getElementById(id); };
   new Editor($("text-input"), $("preview"));
+
 })();
