@@ -25,7 +25,9 @@ textarea {
   height: 100%;
 }
 
-
+.fixed {
+  position: fixed;
+}
 
 
 
