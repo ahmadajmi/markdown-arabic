@@ -19,6 +19,7 @@ textarea {
   border-width: 1px;
   border-color: transparent transparent transparent #f2f2f2;
   padding: 0 1em;
+  outline: none;
 }
 
 .full-height {
