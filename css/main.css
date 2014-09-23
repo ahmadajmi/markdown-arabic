@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-html, 
+html,
 body {
     height: 100%;
 }
@@ -28,4 +28,8 @@ textarea {
 
 .fixed {
   position: fixed;
+}
+
+img {
+	max-width: 100%;
 }
