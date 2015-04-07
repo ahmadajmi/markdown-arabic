@@ -1,35 +1,44 @@
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
   padding: 2em 0;
   text-align: right;
-  font-family: 'Droid Arabic Kufi', serif;
   direction: rtl;
+  font-family: "Droid Arabic Naskh", Helvetica, Arial, sans-serif;
+  line-height: normal;
 }
 
-textarea {
-  width: 100%;
-  height: 100%;
+img { max-width: 100%; }
+
+p { margin: 0 0 26px }
+
+.editor { padding-left: 0; }
+
+.editor:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
   border-style: solid;
   border-width: 1px;
-  border-color: transparent transparent transparent #f2f2f2;
-  padding: 0 1em;
-  outline: none;
+  border-color: transparent transparent transparent #F2F2F2;
 }
 
-.full-height {
+.editor-body {
+  width: 100%;
   height: 100%;
+  border: none;
+  padding-left: 1em;
+  outline: medium none;
 }
 
-.fixed {
-  position: fixed;
-}
+/* Some Helper Classes */
 
-img {
-	max-width: 100%;
-}
+.full-height { height: 100%; }
+.fixed { position: fixed; }

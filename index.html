@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Arabic Markdown</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <title>Arabic Markdown</title>
+  <meta name="description" content="Arabic Markdown Editor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <div class="col-md-12 full-height">
-      <div class="row full-height">
-        <div class="col-sm-6 col-xs-6">
-          <div id="preview"> </div>
-        </div>
-        <div class="col-sm-6 col-xs-6 full-height fixed">
-          <textarea id="text-input" oninput="this.editor.update()"></textarea>
-        </div>
+  <div class="col-md-12 full-height">
+    <div class="row full-height">
+      <div class="col-sm-6 col-xs-6">
+        <div id="preview"> </div>
+      </div>
+      <div class="col-sm-6 col-xs-6 full-height fixed editor">
+        <textarea class="editor-body" id="text-input" oninput="this.editor.update()" autofocus></textarea>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor/markdown.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/vendor/markdown.min.js"></script>
+  <script src="js/main.js"></script>
 
-  </body>
+</body>
 </html>
