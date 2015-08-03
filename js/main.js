@@ -20,7 +20,7 @@ function isLocalStorage() {
 }
 
 // Save data to the localStorage
-$("text-input").addEventListener('change', function(e) {
+$("text-input").addEventListener('keyup', function(e) {
 	if (isLocalStorage()) {
 		localStorage.copy = this.value;
 	}
