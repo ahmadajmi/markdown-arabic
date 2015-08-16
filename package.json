@@ -1,0 +1,23 @@
+{
+  "name": "markdown-arabic",
+  "version": "1.0.0",
+  "description": "Write Markdown in Arabic.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadajmi/markdown-arabic.git"
+  },
+  "author": "Ahmad Ajmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmadajmi/markdown-arabic/issues"
+  },
+  "homepage": "https://github.com/ahmadajmi/markdown-arabic"
+}
