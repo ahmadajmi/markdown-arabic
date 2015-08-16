@@ -1,4 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/DroidArabicNaskh/DroidNaskh-Regular.ttf) format('truetype');
+}
 
 html,
 body {
@@ -9,8 +14,8 @@ body {
   padding: 2em 0;
   text-align: right;
   direction: rtl;
-  font-family: "Droid Arabic Naskh", Helvetica, Arial, sans-serif;
-  line-height: normal;
+  line-height: 1.5;
+  font-family: 'Droid Arabic Naskh', Helvetica, Arial, sans-serif;
 }
 
 img { max-width: 100%; }
@@ -36,6 +41,17 @@ p { margin: 0 0 26px }
   border: none;
   padding-left: 1em;
   outline: medium none;
+}
+
+.source {
+  position: absolute;
+  left: 1em;
+  bottom: 1rem;
+  background: #f2f2f2;
+  padding: .1em .5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.6875em; /*11px*/
 }
 
 /* Some Helper Classes */
