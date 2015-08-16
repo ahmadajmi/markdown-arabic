@@ -1,14 +1,12 @@
-### Write markdown in Arabic.
+Write Markdown in Arabic
 
-I created this simple repo as I write blog posts in Arabic and I didn't find any tool to make it easy to wite in RTL direction with clean font and simple design.
+#### What's in:
 
-#### What I have done:
+- RTL writing direction
+- Nice and simple font
+- LocalStorage support
 
-- Set writing direction to RTL.
-- Used a nice and simple font.
-- Add localStorage support.
-
-#### What I have used:
+#### Used resources:
 
 - [markdown-js](https://github.com/evilstreak/markdown-js)
 - [Droid Arabic Naskh](http://www.google.com/fonts/earlyaccess)
