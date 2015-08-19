@@ -4,16 +4,20 @@
   "description": "Write Markdown in Arabic.",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^3.3.5",
     "express": "^4.13.3",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rename": "^1.2.2"
+    "markdown": "^0.5.0"
   },
   "devDependencies": {
+    "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "^1.2.2",
     "gulp-strip-css-comments": "^1.2.0",
-    "gulp-uglify": "^1.2.0"
+    "gulp-uglify": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
     "start": "node index.js"
