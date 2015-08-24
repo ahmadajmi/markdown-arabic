@@ -9,6 +9,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
 var stripCssComments = require('gulp-strip-css-comments');
+var uncss = require('gulp-uncss');
 
 // CSS task
 
@@ -17,6 +18,9 @@ gulp.task('css', function() {
     .pipe(minifyCSS())
     .pipe(stripCssComments())
     .pipe(concat('style.css'))
+    .pipe(uncss({
+            html: ['public/index.html']
+    }))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('public/css'));
 });
