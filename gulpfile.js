@@ -10,7 +10,7 @@ var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
 var stripCssComments = require('gulp-strip-css-comments');
 
-// CSS task
+// CSS
 
 gulp.task('css', function() {
   return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/css/main.css'])
@@ -21,7 +21,7 @@ gulp.task('css', function() {
     .pipe(gulp.dest('public/css'));
 });
 
-// JavaScript task
+// JavaScript
 
 gulp.task('js', function() {
   return browserify('./public/js/main.js')

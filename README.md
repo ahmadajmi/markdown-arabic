@@ -6,12 +6,12 @@ Write Markdown in Arabic
 - Simple design & font
 - LocalStorage support
 
-#### Used resources:
+#### Used Resources:
 
 - [markdown-js](https://github.com/evilstreak/markdown-js)
 - [Droid Arabic Naskh](http://www.google.com/fonts/earlyaccess)
 
-Deployed to Heroku.
+Hosted on GitHub pages at [arabicmarkdown.github.io](https://github.com/arabicmarkdown/arabicmarkdown.github.io) repo.
 
 ### Run the code with nodejs on localhost
 
@@ -33,7 +33,7 @@ npm start
 
 to start the local server at [localhost:5000]
 
-[Gulp] is used to concat CSS files and then use [gulp-uncss] to make it smaller
+[Gulp] is used for automating tasks.
 
 So if you have done any changes in CSS files please run `gulp` in the command line to run the task.
 
