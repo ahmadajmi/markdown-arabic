@@ -7,7 +7,7 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
+var minifyCSS = require('gulp-clean-css');
 var stripCssComments = require('gulp-strip-css-comments');
 
 // CSS
