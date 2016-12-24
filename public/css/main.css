@@ -43,6 +43,11 @@ p { margin: 0 0 26px }
   outline: medium none;
 }
 
+#preview pre {
+  direction: ltr;
+  text-align: left;
+}
+
 .source {
   position: absolute;
   left: 1em;
