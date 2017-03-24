@@ -1,36 +1,40 @@
-'use strict';
+(function() {
 
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
-var stripCssComments = require('gulp-strip-css-comments');
+  'use strict';
 
-// CSS
+  var gulp              = require('gulp'),
+      uglify            = require('gulp-uglify'),
+      browserify        = require('browserify'),
+      source            = require('vinyl-source-stream'),
+      buffer            = require('vinyl-buffer'),
+      concat            = require('gulp-concat'),
+      rename            = require('gulp-rename'),
+      minifyCSS         = require('gulp-minify-css'),
+      stripCssComments  = require('gulp-strip-css-comments');
 
-gulp.task('css', function() {
-  return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/css/main.css'])
-    .pipe(minifyCSS())
-    .pipe(stripCssComments())
-    .pipe(concat('style.css'))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('public/css'));
-});
+  // CSS
 
-// JavaScript
+  gulp.task('css', function() {
+    return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/css/main.css'])
+      .pipe(minifyCSS())
+      .pipe(stripCssComments())
+      .pipe(concat('style.css'))
+      .pipe(rename('style.min.css'))
+      .pipe(gulp.dest('public/css'));
+  });
 
-gulp.task('js', function() {
-  return browserify('./public/js/main.js')
-    .bundle()
-    .pipe(source('appp.js'))
-    .pipe(buffer())
-    .pipe(uglify())
-    .pipe(rename('app.min.js'))
-    .pipe(gulp.dest('./public/js/'));
-});
+  // JavaScript
 
-gulp.task('default', ['css', 'js']);
+  gulp.task('js', function() {
+    return browserify('./public/js/main.js')
+      .bundle()
+      .pipe(source('appp.js'))
+      .pipe(buffer())
+      .pipe(uglify())
+      .pipe(rename('app.min.js'))
+      .pipe(gulp.dest('./public/js/'));
+  });
+
+  gulp.task('default', ['css', 'js']);
+
+})();

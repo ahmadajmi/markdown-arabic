@@ -14,8 +14,11 @@ body {
   padding: 2em 0;
   text-align: right;
   direction: rtl;
-  line-height: 1.5;
+  line-height: inherit;
   font-family: 'Droid Arabic Naskh', Helvetica, Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 img { max-width: 100%; }
@@ -40,11 +43,12 @@ p { margin: 0 0 26px }
   height: 100%;
   border: none;
   padding-left: 1em;
+  line-height: inherit;
   outline: medium none;
 }
 
 .source {
-  position: absolute;
+  position: fixed;
   left: 1em;
   bottom: 1rem;
   background: #f2f2f2;

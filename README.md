@@ -17,15 +17,15 @@ Hosted on GitHub pages at [arabicmarkdown.github.io](https://github.com/arabicma
 
 Make sure that [node.js] and [npm] are installed.
 
-After that run
+After that run:
 
 ```
 npm install
 ```
 
-to install the dependencies from the package.json file
+to install the dependencies from the `package.json` file
 
-Then run
+Then run:
 
 ```
 npm start
